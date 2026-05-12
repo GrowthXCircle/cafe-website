@@ -33,15 +33,15 @@ export function Navbar() {
           : "bg-transparent py-5"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          <span className="w-10 h-10 rounded-full bg-primary text-primary-foreground grid place-items-center shadow-soft group-hover:rotate-12 transition-transform">
+      <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between gap-5">
+        <Link to="/" className="flex min-w-0 shrink-0 items-center gap-2 group">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-primary text-primary-foreground shadow-soft transition-transform group-hover:rotate-12">
             <Coffee className="w-5 h-5" />
           </span>
-          <span className="font-display text-2xl tracking-tight text-primary">Brew Haven</span>
+          <span className="font-display text-xl tracking-tight text-primary sm:text-2xl">Brew Haven</span>
         </Link>
 
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-5 lg:gap-8">
           {links.map((l) => (
             <li key={l.to}>
               <Link
@@ -59,7 +59,7 @@ export function Navbar() {
 
         <Link
           to="/reservation"
-          className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium shadow-soft hover:shadow-glow hover:-translate-y-0.5 transition-all"
+          className="hidden shrink-0 items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground shadow-soft transition-all hover:-translate-y-0.5 hover:shadow-glow md:inline-flex"
         >
           Reserve Table
         </Link>

@@ -35,7 +35,7 @@ function HomePage() {
 
 function Hero() {
   return (
-    <section className="relative h-screen min-h-[640px] w-full overflow-hidden">
+    <section className="relative min-h-[720px] w-full overflow-hidden md:min-h-screen">
       <div
         className="absolute inset-0 bg-cover bg-center scale-110"
         style={{
@@ -63,7 +63,7 @@ function Hero() {
         </motion.div>
       </motion.div>
 
-      <div className="relative z-10 h-full max-w-7xl mx-auto px-6 flex flex-col justify-center text-cream">
+      <div className="relative z-10 mx-auto flex min-h-[720px] max-w-7xl flex-col justify-center px-6 pb-28 pt-32 text-cream md:min-h-screen md:pb-32 md:pt-36">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -73,19 +73,14 @@ function Hero() {
           <Sparkles className="w-4 h-4 text-accent" /> Est. 2014 · Brew Haven
         </motion.span>
 
-        <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] max-w-3xl">
-          {"Start Your Day With Perfect Coffee".split(" ").map((w, i) => (
-            <motion.span
-              key={i}
-              initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              transition={{ delay: 0.3 + i * 0.08, duration: 0.7 }}
-              className="inline-block mr-3"
-            >
-              {w === "Perfect" ? <em className="text-gradient-warm not-italic">{w}</em> : w}
-            </motion.span>
-          ))}
-        </h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+          className="mt-6 max-w-full font-display text-4xl leading-[1.08] sm:text-6xl lg:max-w-3xl lg:text-7xl xl:text-8xl"
+        >
+          Start Your Day With <em className="text-gradient-warm not-italic">Perfect</em> Coffee
+        </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -151,7 +146,7 @@ function CoffeeCupSVG() {
 
 function Stats() {
   return (
-    <section className="relative mt-12 md:-mt-20 z-20 max-w-6xl mx-auto px-6">
+    <section className="relative z-20 mx-auto mt-8 max-w-6xl px-6 md:-mt-10">
       <div className="grid grid-cols-2 md:grid-cols-4 bg-card rounded-3xl shadow-card overflow-hidden border border-border">
         {stats.map((s, i) => (
           <motion.div
