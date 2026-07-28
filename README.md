@@ -51,6 +51,6 @@ To build the project for production:
 bun run build
 ```
 
-## License
+## Use as a template
 
-This project is for demonstration purposes only and is not licensed for commercial use.
+You can use this code as a template for building your own website. Replace the demo branding, content, contact details, and images before publishing.
