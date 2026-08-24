@@ -1,56 +1,42 @@
 # Brew Haven Cafe
 
-## Overview
+A responsive multi-page cafe portfolio with menu discovery, item details, a gallery, cafe information, reservations, and contact content.
 
-This repository contains the source code for the demo portfolio website of Brew Haven Cafe, a modern web application showcasing contemporary design and functionality.
+**Live website:** [brewheavencafe.vercel.app](https://brewheavencafe.vercel.app/)  
+**Repository:** [GrowthXCircle/cafe-website](https://github.com/GrowthXCircle/cafe-website)
 
-## Description
+## Highlights
 
-This is a demo portfolio website built to demonstrate best practices in web development, featuring responsive design, interactive elements, and optimized performance.
+- Home, menu, item-detail, about, gallery, reservation, and contact routes
+- Structured cafe and menu data
+- Responsive shared layout
+- Animated counters, steam effects, and scroll progress
 
-## Technologies Used
+## Technology
 
-- Vite
-- TypeScript
-- React
-- Tailwind CSS (if applicable)
-- Other modern web technologies
+React 19, TypeScript, TanStack Router, TanStack Start, Vite 7, Tailwind CSS 4, Framer Motion, and Lucide React.
 
-## Getting Started
+## Local development
 
-### Prerequisites
-
-- Node.js (version 18 or higher)
-- Bun package manager
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd Brew_Haven_Cafe
-   ```
-
-2. Install dependencies:
-   ```bash
-   bun install
-   ```
-
-3. Start the development server:
-   ```bash
-   bun run dev
-   ```
-
-4. Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite).
-
-## Build
-
-To build the project for production:
+Node.js 22 or newer and npm are recommended.
 
 ```bash
-bun run build
+git clone https://github.com/GrowthXCircle/cafe-website.git
+cd cafe-website
+npm install
+npm run dev
 ```
 
-## Use as a template
+Create and preview a production build:
 
-You can use this code as a template for building your own website. Replace the demo branding, content, contact details, and images before publishing.
+```bash
+npm run build
+npm run preview
+```
+
+Run the configured linter with `npm run lint`.
+
+## Project scope
+
+This is a frontend demonstration project, not the website of an operating business. Menu items, prices, location details, reservations, and business information are illustrative.
+
